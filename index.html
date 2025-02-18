@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .container .fotomuka{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #444;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+  }
+    .fotomuka img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+  }
+    .fotomuka img:hover{
+    transform: scale(1.4);
+  }
+  #portofolio {
+            margin: 20px -48px -45px -48px;
+            padding-top: 40px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .carousel-item {
+                height: 200px !important;
+            }
+
+            .carousel-item h3 {
+                font-size: 14px !important;
+            }
+
+            .carousel-item h6 {
+                font-size: 12px !important;
+            }
+
+            .text-portofolio {
+                color: #ff0000;
+                top: 3% !important;
+                opacity: 1;
+                padding-left: 50px !important;
+                padding-right: 50px !important;
+            }
+        }
+
+        .carousel-item {
+            height: 500px;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-item:hover .overlay-porto {
+            opacity: 1;
+        }
+
+        .overlay-porto {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(20, 32, 41, 0.884);
+            cursor: pointer;
+        }
+
+        .text-portofolio {
+            color: #ff0000;
+            padding: 20px 100px;
+            position: inline;
+            position: absolute;
+            width: 100%;
+            top: 35%;
+            opacity: 1;
+        }
+
+        .contact {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+    margin-bottom: 20px;
+}
+
+.contact-info p,
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #627b53;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form button {
+        font-size: 18px;
+    }
+
+    .contact-info p,
+    .contact-info a {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact .heading {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact .heading {
+        font-size: 1.2em;
+    }
+
+    .contact-info p,
+    .contact-info a,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+}
+    footer p{
+  text-align: center;
+    }
+
+        .bayang{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight:1000;text-transform:uppercase;color:#ffffff}
+  </style>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Samuel Hasian Sianturi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none"></span>
+        <div class="container">
+        <span class="d-none d-lg-block">
+          <div class="fotomuka"><img src="img/samuel.jpg" alt=""></div>
+        </span></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portofolio1">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Hit Me Up !</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-5">Samuel Hasian Sianturi
+            <span class="text-primary"></span>
+          </h1>
+          <!-- <div class="subheading mb-5">Jalan Pendidikan Nomor 78 · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+            <a href="mailto:name@email.com">name@email.com</a>
+          </div> -->
+          <p class="mb-3">I am a graduate of SMAN 32 Jakarta and currently pursuing my studies at the University of North Sumatra, majoring in Information Technology. I have a strong interest in technology and continuously strive to develop my skills in programming, data analysis, and information system management.</p>
+          <p class="mb-5">Currently, I have learned several programming languages for web development, including HTML, CSS, Bootstrap, JavaScript, jQuery, and PHP. I enjoy exploring new technologies and continuously honing my skills in both front-end and back-end development. I am a disciplined individual, a fast learner, and highly motivated to keep growing and contributing to the technology industry.          </p>
+          <div class="row bio text-left">
+            <div class="col-md-4 mb-3">
+                <div class="text-primary mb-1">
+                    <i class=" fa fa-address-book fa-fw" aria-hidden="true"></i>&nbsp; 
+                    Full Name :
+                </div>
+                Samuel Hasian Sianturi
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="text-primary mb-1">
+                    <i class=" fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;
+                    Email :
+                </div>
+                <a href="mailto:samuel20sianturi@gmail.com"
+                    class="text-dark text-decoration-none">samuel20sianturi@gmail.com</a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <!-- <div class="text-primary mb-1">
+                    <i class=" fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; Nomor Telepon
+                    :
+                </div>
+                +62-895-3840-97419 -->
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="text-primary mb-1">
+                    <i class=" fa fa-calendar-plus-o fa-fw" aria-hidden="true"></i>&nbsp;
+                    Born :
+                </div>
+                Jakarta, 16 Agustus 2005
+
+                <div class="mt-3 text-primary mb-1">
+                    <i class=" fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; Phone Number
+                    :
+                </div>
+                +62-895-3840-97419
+            </div>
+
+            <div class="col-md-8">
+                <div class="text-primary mb-1">
+                    <i class=" fa fa-map-pin fa-fw" aria-hidden="true"></i>&nbsp; Adress :
+                </div>
+                Jalan Pendidikan No. 78, Tegal Rejo, Kec. Medan Perjuangan <br>
+                Kota Medan, Kode Pos 20236
+            </div>
+          </div>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/ssamul_?igsh=MTE0Zm5qdDJkem8xYw==">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/samuel-sianturi-0a52a6342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://wa.me/qr/TS7AIPINDNHSA1 ">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/ssamul16">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Universitas Sumatera Utara</h3>
+              <div class="subheading mb-0">Sumatera Utara</div>
+              <div>S-1 Teknologi Informasi</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2024 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">SMAN 32 Jakarta</h3>
+              <div class="subheading mb-0">Jakarta</div>
+              <div>MIPA</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2020 - 2023</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">SMP Negeri 32 Jakarta</h3>
+              <div class="subheading mb-3">Jakarta</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2017 - 2020</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Hard Skill</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">HTML</p>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">CSS</p>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">Javascript</p>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">Jquery</p>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">Bootstrap</p>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-mysql"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">mysql</p>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-php"></i>
+              <p class="badge p-2 bg-grey mb-2 mr-2">php</p>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Soft Skill</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Communication Skills</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Teamwork</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Problem Solving</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Active Listening</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Interpersonal Skills</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Time Management</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Decision-Making</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Creativity</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portofolio1">
+        <div class="my-auto">
+          <h2 class="mb-5">Portofolio</h2>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 slider-img" src="img/bukti.png">
+                    <div class="overlay-porto">
+                        <div class="text-portofolio text-center mx-auto">
+                            <h3 class="bayang font-weight-bold">bukTI</h3>
+                            <!-- <hr class="mt-1" style="border:1px solid #fff;" width="20%"> -->
+                            <h6 class="bayang">
+                              I, along with my friends, created an e-commerce website for buying and selling books.</h6>
+                              <h6 class="bayang">In this project, I was responsible for building several pages of the website, from the frontend to the backend. My role involved designing an attractive and responsive user interface, as well as ensuring proper integration with the backend system.</h6>
+                            <h6 class="bayang">For development, I used VSCode as the code editor and explored various techniques and solutions in programming. This project provided valuable hands-on experience in full-stack web development and helped enhance my programming skills and teamwork abilities.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 slider-img" src="img/solartracker.png">
+                    <div class="overlay-porto">
+                        <div class="text-portofolio text-center mx-auto">
+                            <h3 class="bayang font-weight-bold">Solar Tracker</h3>
+                            <!-- <hr class="mt-1" style="border:1px solid #fff;" width="20%"> -->
+                            <h6 class="bayang">
+                              This project is a Solar Tracker system simulation using Wokwi to improve solar panel efficiency by automatically following the movement of the sun. The system utilizes LDR sensors to detect light and servo motors to adjust the panel’s position, with programming done in C/C++ using the Arduino IDE.</h6>
+                              <h6 class="bayang">As creator, I was responsible for designing, programming, and testing the system. The simulation results demonstrated that the panel could effectively adjust its position, proving its potential for real-world implementation in solar energy systems.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 slider-img" src="img/tiketonline.png">
+                  <div class="overlay-porto">
+                      <div class="text-portofolio text-center mx-auto">
+                          <h3 class="bayang font-weight-bold">E-Ticket form</h3>
+                          <!-- <hr class="mt-1" style="border:1px solid #fff;" width="20%"> -->
+                          <h6 class="bayang">
+                            A website for purchasing e-tickets is an online platform that allows
+                            users to buy tickets for various events, transportation, or services.</h6>
+                            <h6 class="bayang">The website offers a user-friendly interface where customers can browse
+                            available options, select their preferred tickets, and make secure payments.
+                            It typically includes features such as event details, ticket categories
+                          </h6>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>I have a deep passion for the field of information technology, particularly in programming, web development, and web design. I enjoy exploring various technologies, frameworks, and tools used in software development to create innovative and efficient solutions that can enhance user experience and solve real-world problems. I am always eager to learn new programming languages and development techniques to expand my skill set and stay updated with the latest trends in technology.</p>
+          <p>I have a strong desire to continuously improve my skills through hands-on projects, challenges, and real-world applications. Whether it’s coding a new project, designing a website, or working on an application, I always strive for excellence and efficiency. I am highly motivated to contribute to the tech industry by developing innovative solutions that have a meaningful impact on people’s lives.</p>
+          <p class="mb-0">Beyond technology, I also value balance in life. In my free time, I enjoy spending quality moments with my friends and family, as social interactions are important to me. When I have time for myself, I choose to stay active through various physical activities such as running, lifting dumbbells, or skipping rope. Exercising not only keeps me physically fit but also helps me stay focused and motivated in my studies and personal growth.</p>
+        </div>
+      </section>
+
+      <section class=" resume-section p-3 p-lg-5 d-flex flex-column contact" id="contact">
+            <div class=" my-auto contact-form">
+              <h2 class="mb-5">Hit Me Up !</h2>
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <p>&#169; 2025 Samuel Hasian Sianturi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
